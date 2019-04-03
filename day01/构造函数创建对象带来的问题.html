@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数创建对象带来的问题</title>
+    <script>
+        function eatBigShit() {
+            console.log("吃大粑粑");
+        }
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.eat = function () {
+                console.log("今天吃土豆!")
+            };
+        }
+
+        var per1 = new Person("小白", 20);
+        var per2 = new Person("小黑", 30);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

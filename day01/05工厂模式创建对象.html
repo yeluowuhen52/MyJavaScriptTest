@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工厂模式创建对象</title>
+    <script>
+        function createObject(name,age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHi = function () {
+              console.log("您好");
+            };
+
+            return obj;
+        }
+
+        var per1 = createObject("xiaofang",22);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

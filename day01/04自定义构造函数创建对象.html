@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义构造函数创建对象</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.sayHi = function () {
+                console.log("你好");
+            };
+        }
+        //创建对象，初始化对象
+        var per = new Person("xiaohong",20);
+        console.log(per.sayHi());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

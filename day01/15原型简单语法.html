@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型简单语法</title>
+    <script>
+        function Student(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        Student.prototype.height = "188";
+        Student.prototype.weight = "55kg";
+        Student.prototype.study = function () {
+            console.log("写1000行代码!")
+        };
+        Student.prototype = {
+            height: "188",
+            weight: "55kg",
+            study: function () {
+                console.log("学习吧!")
+            },
+            eat: function () {
+                console.log("吃10斤西瓜!")
+            }
+        };
+        // Student.prototype.eat = function () {
+        //     console.log("吃10斤西瓜!")
+        // };
+        //
+        // var per = new Student("zhangsan", 58, "男");
+        // per.study();
+        // per.eat();
+
+        var student = new Student("zhangsan", 58, "男");
+        student.eat();
+        student.study();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

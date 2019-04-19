@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 17实例对象使用的属性和方法层层的搜索</title>
+    <script>
+        function Person(age, sex) {
+            this.age = age;
+            this.sex = sex;
+            this.eat = function () {
+                console.log("构造方法中的吃！");
+            };
+        }
+
+        var per  = new Person(12,"男");
+        per.eat();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

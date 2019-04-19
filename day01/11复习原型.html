@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复习原型</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.sayHi = function () {
+            console.log("打招呼,你好！");
+        };
+
+        var p = new Person("zhangsan",22);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

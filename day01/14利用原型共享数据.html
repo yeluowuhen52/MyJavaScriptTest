@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用原型共享数据</title>
+    <script>
+        function Student(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        Student.prototype.height = "188";
+        Student.prototype.weight = "55kg";
+        Student.prototype.study = function () {
+            console.log("写1000行代码!")
+        };
+
+        Student.prototype.eat = function () {
+            console.log("吃10斤西瓜!")
+        };
+
+        var per = new Student("zhangsan", 58, "男");
+        per.study();
+        per.eat();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

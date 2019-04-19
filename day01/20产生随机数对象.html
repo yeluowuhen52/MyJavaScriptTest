@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 20产生随机数对象</title>
+    <script>
+        (function (window) {
+            //产生随机数
+            function Random() {
+
+            }
+
+            Random.prototype.getRandom = function (min, max) {
+                return Math.floor(Math.random() * (max - min) + min);
+            };
+
+            window.Random = Random;
+        })(window);
+
+        var random = new Random();
+        console.log(random.getRandom(0, 5));
+
+        // var num = random.getRandom();
+        // console.log(num);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

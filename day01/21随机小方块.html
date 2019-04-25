@@ -14,6 +14,8 @@
     </style>
 </head>
 
+
+
 <body>
 <div class="map"></div>
 
@@ -34,7 +36,6 @@
     (function (window) {
         // console.log(Random.getRandom(0,5))
         var map = document.querySelector(".map");
-
         function Food(width, height, color) {
             this.width = width || 20;
             this.height = height || 20;
@@ -72,7 +73,7 @@
             div.style.top = this.y + "px";
         };
 
-        var fd = new Food(20, 20, "green");
+        var fd = new Food(20, 20, "yellow");
         fd.init(map);
 
         console.log(fd.x + "====" + fd.y);
